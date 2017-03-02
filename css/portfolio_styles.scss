@@ -1,16 +1,18 @@
 //Variables
 $bgColor: white;
-$flairColor: lightblue;
-$splashColor: linear-gradient(to bottom right, black, #2C3539);
+$flairColor: #9ad3de;
+$splashColor: linear-gradient(to right bottom, #c9c9c9, #89bdd3);
 $break-small: 700px;
 $break-large: 1200px;
+$main-font:'Muli', sans-serif;
+$splash-words:#c9c9c9;
 //=======================
 
 
 body{
   background-color: $bgColor;
   margin:0 auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $main-font;
 }
 
 
@@ -23,6 +25,7 @@ body{
   top:0px;
 
   h1{
+    color: $splash-words;
     line-height: 50px;
   }
 }
@@ -53,8 +56,9 @@ margin-left: 100px;
 
 .splash-words{
 
-  font-size:270%;
+  font-size:290%;
   color:white;
+  text-shadow: -1px 0 $flairColor, 0 1px  $flairColor, 1px 0 $flairColor, 0 -1px $flairColor;
 
 }
 
@@ -85,6 +89,16 @@ margin-left: 100px;
 
 .web-br{
   height:50px;
+}
+
+#slide{
+  font-size:50px;
+  border-radius: 50%;
+  width:70px;
+  height:70px;
+  background-color:rgba(0,0,0,0.1);
+  color:white;
+  border-style:solid;
 }
 
 @media (max-width: $break-small){
