@@ -1,0 +1,97 @@
+//Variables
+$bgColor: white;
+$flairColor: lightblue;
+$splashColor: linear-gradient(to bottom right, black, #2C3539);
+$break-small: 700px;
+$break-large: 1200px;
+//=======================
+
+
+body{
+  background-color: $bgColor;
+  margin:0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.header{
+  background-color: white;
+  width:100%;
+  height:75px;
+  margin:0 auto;
+  position:fixed;
+  top:0px;
+
+  h1{
+    line-height: 50px;
+  }
+}
+
+.content{
+  background: white;
+  height: inherit;
+  width: 100%;
+  margin:10px auto;
+
+}
+
+.name{
+  padding:auto;
+  margin:auto;
+margin-left: 100px;
+  padding:10px;
+  text-size:40px;
+
+  @media (max-width: $break-small) {
+    margin-left:30px
+  }
+}
+
+.flair{
+  color:$flairColor;
+}
+
+.splash-words{
+
+  font-size:270%;
+  color:white;
+
+}
+
+.splash-img{
+  margin: 150px auto;
+  width:100%;
+  height:500px;
+  background-image:$splashColor;
+  text-align: center;
+
+  h1{
+    vertical-align:middle;
+    display:inline-block;
+    margin-bottom:auto;
+  }
+
+  h2{
+    vertical-align:middle;
+    display:inline-block;
+    margin: 0 auto;
+  }
+
+  span{
+    color:$flairColor;
+  }
+
+}
+
+.web-br{
+  height:50px;
+}
+
+@media (max-width: $break-small){
+
+  .splash-words h1,h2{
+    margin-top:30%;
+    font-size:100%;
+    overflow:hidden;
+  }
+}
