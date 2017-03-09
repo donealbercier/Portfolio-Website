@@ -1,6 +1,7 @@
 //Variables
 $bgColor: white;
 $flairColor: #9ad3de;
+$secondary-color:#89bdd3;
 //$bodyGradient: linear-gradient(to right bottom, white, white, white, #89bdd3);
 $bodyGradient: $flairColor;
 $splashColor: linear-gradient(to right bottom, #89bdd3, #89bdd3);
@@ -8,6 +9,7 @@ $break-small: 700px;
 $break-large: 1200px;
 $main-font: 'Raleway', sans-serif;;
 $splash-words:#c9c9c9;
+
 //=======================
 
 .border{
@@ -17,6 +19,7 @@ html {
     height: 100%;
 }
 body {
+  transition-duration: 1s;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -104,6 +107,8 @@ margin-left: 10%;
 
 .splash-img{
   margin: 100px auto;
+  margin-bottom:0;
+  padding-bottom:0;
   width:100%;
   height:400px;
   background-image:$splashColor;
@@ -128,7 +133,7 @@ margin-left: 10%;
 }
 
 .web-br{
-  height:50px;
+  height: 60px;
 }
 
 #slide{
@@ -141,6 +146,7 @@ margin-left: 10%;
   border-style:solid;
 }
 
+
 @media (max-width: $break-small){
 
   .splash-words h1,h2{
@@ -150,10 +156,12 @@ margin-left: 10%;
   }
 }
 
+//General class for centereing content
 .centered{
   vertical-align:middle;
   display:inline-block;
-  margin-bottom:auto;
+  margin-bottom:10%;
+  margin-top:10%;
   width:100%;
   text-align: center;
   overflow:hidden;
@@ -173,4 +181,68 @@ margin-left: 10%;
 
 .fa:hover{
   color:black;
+}
+
+//CSS for skills section
+.skills{
+  font-size:100%;
+  width:100%;
+  h1{
+    padding:0;
+    margin:0;
+  }
+
+  div{
+      display:inline-block;
+  }
+.skills-content{
+  overflow:hidden;
+  width:inherit;
+
+}
+
+  .skills-name{
+    div{
+    margin:50px;
+    width:50%;
+    float:left;
+    text-align: left;
+  }
+  }
+  .skills-level{
+    div{
+    margin-left: 10%;
+    width:50%;
+    justify-content: right;
+    float:right;
+  }
+  }
+
+  @media (max-width: $break-small) {
+    font-size:75%;
+
+  }
+
+}
+
+
+//CSS for Projects sections
+.projects{
+  background-color:$secondary-color;
+  min-height:150%;
+  margin:auto;
+  font-size:100%;
+  width:100%;
+  h1{
+    margin:0;
+  }
+
+  div{
+      display:inline-block;
+  }
+}
+
+.project-embeds{
+  min-width:500px;
+  min-height:500px;
 }
