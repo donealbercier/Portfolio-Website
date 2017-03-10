@@ -1,16 +1,18 @@
 //Variables
 $bgColor: white;
-$flairColor: #9ad3de;
+$flairColor: #D2FF96;
 $secondary-color:#89bdd3;
 //$bodyGradient: linear-gradient(to right bottom, white, white, white, #89bdd3);
 $bodyGradient: $flairColor;
-$splashColor: linear-gradient(to right bottom, #89bdd3, #89bdd3);
+$splashColor: linear-gradient(to right bottom, #00BCD4, #00BCD4 );
 $break-small: 700px;
 $break-large: 1200px;
 $main-font: 'Raleway', sans-serif;;
 $splash-words:#c9c9c9;
 
 //=======================
+
+
 
 .border{
   border: 2px solid black;
@@ -48,13 +50,17 @@ body{
   h1{
     color: $splash-words;
     line-height: 50px;
+    @media (max-width: $break-small) {
+      font-size:30px;
+
+    }
 
   }
 
   a{
     text-decoration:none;
     font-size:25px;
-    margin:20px;
+    margin-top:28px;
     margin-left:0px;
     margin-right:0px;
     padding:5px;
@@ -219,7 +225,8 @@ margin-left: 10%;
   }
 
   @media (max-width: $break-small) {
-    font-size:75%;
+    font-size:80%;
+
 
   }
 
@@ -228,21 +235,72 @@ margin-left: 10%;
 
 //CSS for Projects sections
 .projects{
-  background-color:$secondary-color;
-  min-height:150%;
-  margin:auto;
+  padding-top:50px;
+  background:$splashColor;
   font-size:100%;
-  width:100%;
+
+
+
+
   h1{
     margin:0;
+    padding:0;
   }
 
-  div{
-      display:inline-block;
+  .projects-embed{
+    width:60%;
+    ul{
+      text-align:left;
+      li{
+        text-align:left;
+      }
+    }
   }
+
 }
 
-.project-embeds{
-  min-width:500px;
-  min-height:500px;
+
+/* CSS for Contact Me Section */
+form{
+  justify-content: center;
+  display:block;
+
+  input{
+    background-color: white;
+    font-size:25px;
+    border:1px solid $flairColor;
+    height:70px;
+    color:$flairColor;
+    margin:auto;
+    padding:10px;
+    width:500px;
+
+    &:focus{
+      border:1px solid white;
+    }
+    &:hover{
+      background-color:rgba(255,255,255,0.5);
+    }
+  }
+  #submit{
+    max-width:200px;
+    padding:auto;
+  }
+
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  margin-left:10px;
+  color: $flairColor;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $flairColor;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $flairColor;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: $flairColor;
+  opacity: 1;
 }
