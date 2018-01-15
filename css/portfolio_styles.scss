@@ -250,11 +250,18 @@ margin-left: 10%;
   .projects-embed{
     width:60%;
     ul{
-      text-align:left;
+      text-align:center;
       li{
-        text-align:left;
+        text-align:center;
       }
     }
+    ul {
+    list-style: none;
+}
+
+li:before {
+    content: '> ';
+}
   }
 
 }
@@ -289,6 +296,7 @@ form{
 
 }
 
+
 ::-webkit-input-placeholder { /* Chrome */
   margin-left:10px;
   color: $flairColor;
@@ -303,4 +311,22 @@ form{
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: $flairColor;
   opacity: 1;
+}
+
+
+
+.project-technologies{
+  h2{
+    word-wrap:break-word;
+    margin:auto;
+    padding:1%;
+
+
+  }
+  width:50%;
+  float:left;
+}
+.project-description{
+  width:50%;
+  float:left;
 }

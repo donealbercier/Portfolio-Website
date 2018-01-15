@@ -162,9 +162,13 @@ body {
   .projects .projects-embed {
     width: 60%; }
     .projects .projects-embed ul {
-      text-align: left; }
+      text-align: center; }
       .projects .projects-embed ul li {
-        text-align: left; }
+        text-align: center; }
+    .projects .projects-embed ul {
+      list-style: none; }
+    .projects .projects-embed li:before {
+      content: '> '; }
 
 /* CSS for Contact Me Section */
 form {
@@ -205,5 +209,17 @@ form {
   /* Firefox 4 - 18 */
   color: #D2FF96;
   opacity: 1; }
+
+.project-technologies {
+  width: 50%;
+  float: left; }
+  .project-technologies h2 {
+    word-wrap: break-word;
+    margin: auto;
+    padding: 1%; }
+
+.project-description {
+  width: 50%;
+  float: left; }
 
 /*# sourceMappingURL=styles.css.map */
